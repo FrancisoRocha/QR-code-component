@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.card{
+    width: 32rem;
+    height: 49.9rem;
+    background-color: v.$Blanco;
+    margin: 0 auto;
+    margin-top: 15rem;
+    @include m.tablet{
+        margin: 0 auto;
+        margin-top: 15rem;
+    }
+    
+    .imagen{
+        width: 28.8rem;
+        height: 28.8rem;
+        margin: 1.6rem;
+    }
+    .contenido{
+        width: 28.8rem;
+        height: 16.3rem;
+        padding: 1.6rem;
+        margin-left: 1.6rem;
+        .title{
+            color: v.$AzulFuerte;
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin: 0;
+        }
+        
+        .texto{
+            color: v.$GrisClaro;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            letter-spacing: 0.2px;
+        }
+    }
+}
